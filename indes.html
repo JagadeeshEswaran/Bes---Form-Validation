@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="style.css" />
+		<script type="module" src="./index.js" defer></script>
+
+		<title>Bes - Form Validation</title>
+	</head>
+	<body>
+		<div class="form_container">
+			<form onsubmit="" id="form">
+				<h1>Registration Form</h1>
+
+				<!-- FULL NAME -->
+				<div class="form_group">
+					<label for="fullname">Full-Name : </label>
+					<input
+						type="text"
+						name="fullname"
+						id="fullname"
+						placeholder="Your Full-Name"
+						rquired
+						minlength="5"
+						maxlength="50" />
+				</div>
+
+				<!-- USERNAME -->
+				<div class="form_group">
+					<label for="username">Username : </label>
+					<input
+						type="text"
+						name="username"
+						id="username"
+						placeholder="create a username"
+						rquired
+						minlength="8"
+						maxlength="50" />
+				</div>
+
+				<!-- PASSWORD -->
+				<div class="form_group">
+					<label for="password">Password</label>
+					<input
+						type="text"
+						name="password"
+						id="password"
+						placeholder="Create a Password"
+						rquired
+						minlength="8"
+						maxlength="50" />
+				</div>
+
+				<!-- CONFIRM PASSWORD -->
+				<div class="form_group">
+					<label for="cnf_password">Confirm Password</label>
+					<input
+						type="text"
+						name="cnf_password"
+						id="cnf_password"
+						placeholder="Confirm Password"
+						rquired
+						minlength="8"
+						maxlength="50" />
+				</div>
+
+				<!-- PHONE NUMBER -->
+				<div class="form_group">
+					<label for="phone">Phone No.:</label>
+					<input
+						type="text"
+						name="phone"
+						id="phone"
+						placeholder="Enter your Phone No."
+						rquired
+						minlength="10"
+						maxlength="10" />
+				</div>
+
+				<!-- EMAIL ID -->
+				<div class="form_group">
+					<label for="email">email ID</label>
+					<input
+						type="text"
+						name="email"
+						id="email"
+						placeholder="Enter your email ID"
+						rquired
+						maxlength="50" />
+				</div>
+
+				<!-- LINKEDIN PROFILE -->
+				<div class="form_group">
+					<label for="profile">Linked-in Profile</label>
+					<input
+						type="text"
+						name="profile"
+						id="profile"
+						placeholder="Paste your Linked-in Profile URL"
+						rquired />
+				</div>
+
+				<button type="submit">Submit</button>
+			</form>
+
+			<div class="message_container">
+				<h1 id="message">Don't hesitate</h1>
+			</div>
+		</div>
+	</body>
+</html>
